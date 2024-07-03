@@ -35,25 +35,60 @@ h1 {
   line-height: 1.1;
 }
 
-nav {
+
+
+.main-nav{
+  background-color: #424141;
+  width: 100%;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+}
+
+.main-nav ul {
+  list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  
+}
+
+.main-nav ul li a {
+  color: rgb(206, 174, 223);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  margin-top: 60px; /* Ajusta según sea necesario */
+  position: relative;
+  top: 60px; /* Debe ser al menos igual a la altura de tu nav */
 }
 
 button {
   border-radius: 8px;
   border: 1px solid #ccc;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 23px;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
-  margin-top: 10px;  
+  transition: border-color 0.25s; 
+  color: #747bff;
+  
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #f4e702;
 }
 button:focus,
 button:focus-visible {
@@ -69,27 +104,35 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.3));
   }
 }
 .App {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
 }
 .light {
-  background-color: white;
+ background-image: url(https://t3.ftcdn.net/jpg/06/27/85/70/360_F_627857017_5r2FsJYJeZfufqiXcUvKCENF3fz4xFyg.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
   color: black;
+  
 }
 
 .dark {
-  background-color: #242424;
+  background-image: url(https://wpamelia.com/wp-content/uploads/2019/02/6284.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
   color: #ccc;
 }
 
-.content {
-  width: 300px;
-}
+
+
+
+
 
