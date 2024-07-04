@@ -3,14 +3,18 @@
 import React from "react";
 import Button from "../Button";
 
-const MyJob = () => {
+
+const MyJob = ({titleJob, textExpla }) => {
   return (
     <div>
+      <h1> My Job Page</h1>
+      <h2>{titleJob}</h2>
+      <div>{textExpla}</div>
+
       <Button />
-      <h1>Esta es la página MyJob</h1>
-      
     </div>
   );
 };
 
 export default MyJob;
+

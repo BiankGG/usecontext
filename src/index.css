@@ -11,7 +11,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
+
+
 
 a {
   font-weight: 500;
@@ -38,7 +41,7 @@ h1 {
 
 
 .main-nav{
-  background-color: #424141;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
   width: 100%;
   padding: 10px 0;
   position: fixed;
@@ -53,26 +56,28 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 20px;
   
 }
 
 .main-nav ul li a {
-  color: rgb(206, 174, 223);
+  color: rgb(127, 6, 192);
   text-decoration: none;
   font-weight: bold;
   font-size: larger;
 }
+
+
+
 
 .button-container {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   padding: 10px 20px;
-  margin-top: 60px; /* Ajusta según sea necesario */
-  position: relative;
-  top: 60px; /* Debe ser al menos igual a la altura de tu nav */
+  margin-top: 20px;
 }
+
 
 button {
   border-radius: 8px;
@@ -132,7 +137,40 @@ button:focus-visible {
 }
 
 
+.card-image {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 38%;
+  margin-right: 20px; 
+  margin-bottom: -22px;
+}
+
+.Home-Icon-pic{
+  width: 250px; 
+  height: 280px; 
+  border-radius: 38%;
+  margin-bottom: 20px;
+
+}
 
 
 
+.profile-card {
+  display: flex;
+  align-items: center; 
+  
+ 
+}
+
+
+.card-text { 
+  border: 6px double black;
+  text-align: center; 
+  align-items: center;
+  font-size: small;
+  font-family: cursive;
+}
+.dark .card-text {
+  border-color: white;
+}
 
